@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>멘시루</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>멘시루</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/mensiru/mensiru3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mensiru/mensiru.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mensiru/mensiru1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mensiru/mensiru2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mensiru/mensiru4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">3</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 백령로138번길 56<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.3650832112213!2d127.74496296312064!3d37.872915988308776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcdad2175dd79d3c6!2z66mY7Iuc66Oo!5e0!3m2!1sko!2skr!4v1654791281375!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>   
+                    <div><h4>매장소개</h4> 멘시루는 여러 라멘과 소바 돈카츠를 판매하는 음식점입니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 11:00 ~ 20:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        돈코츠라멘 8500원 <br>탄탄카라미소 라멘 8500원<br> 가츠동 8500 <br>새우소바 8500원 <br>치즈볼 5000원<br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/search/%EB%A9%98%EC%8B%9C%EB%A3%A8/place/195466594?c=14219630.4747504,4561485.6811584,15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/555113840" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EB%A9%98%EC%8B%9C%EB%A3%A8/data=!4m12!1m6!3m5!1s0x3562e5c7a006ae73:0x73af90930c7b7978!2z7Jik7JeUKE9OKeq1reyImA!8m2!3d37.8734099!4d127.7436772!3m4!1s0x0:0xcdad2175dd79d3c6!8m2!3d37.8728542!4d127.7454478?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                    <div id="eval"><h4><br>한줄평<br></h4></div>    
+                   
+                  
+                        <ul id="comments"></ul>
+                        <form action="js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form>
+                      
+                    </div>
+                  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body> 
+</html>

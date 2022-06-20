@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>공차</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>공차</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/gongcha/gongcha.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/gongcha/gongcha1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/gongcha/gongcha2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/gongcha/gongcha3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/gongcha/gongcha4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">6</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로 216<br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d787.3582038601567!2d127.74165940542997!3d37.87355966476917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc11146c1e613f1d8!2z6rO17LCoIOy2mOyynOqwleybkOuMgOygkCDosqLvp74gR29uZyBDaGE!5e0!3m2!1sko!2skr!4v1655172509610!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-263-0707 <br><br></div> 
+                    <div><h4>매장소개</h4>  공차는 여러 음료를 판매하는 카페입니다. <br> 버블티등이 매우 유명합니다. 당도까지 설정하여 개인의 입맛에 맞게 즐겨보세요.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 매일 10:00~24:00  <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        골든펄 딸기캐모마일티 5300원 <br>골든펄 돌체 밀크티 스무디 5500원<br> 타로밀크티+펄L 4400원<br> 납작복숭아 쥬얼리 밀크티 5100원<br>그릭요거트 & 딸기 밀크티 크러쉬 6500원<br>등 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/37826677?c=14219895.7268330,4561492.1963948,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/26898491" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EA%B3%B5%EC%B0%A8+%EC%B6%98%EC%B2%9C%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90+%E8%B2%A2%EF%A7%BE+Gong+Cha/data=!4m5!3m4!1s0x0:0xc11146c1e613f1d8!8m2!3d37.8736119!4d127.7420866?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+                        <a href="https://www.instagram.com/explore/tags/%EA%B3%B5%EC%B0%A8%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90/" target="_blank"><img id="potal" src="/media/instagram.png"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                    </div>
+                 
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

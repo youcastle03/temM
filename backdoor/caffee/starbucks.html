@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>스타벅스</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>스타벅스</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/starbucks/starbucks.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/starbucks/starbucks1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/starbucks/starbucks2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/starbucks/starbucks3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/starbucks/starbucks4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">8</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로243-1<br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481.8892478919898!2d127.74472680085361!3d37.872798104175665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b87f707c1b%3A0x418788fd5b4b3985!2z7Iqk7YOA67KF7IqkIOqwleybkOuMgOygkA!5e0!3m2!1sko!2skr!4v1654834550068!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  1522-3232 <br><br></div> 
+                    <div><h4>매장소개</h4> 스타벅스는 매우유명한 카페프렌차이즈입니다.<br>3층짜리 건물에서 좋은 음료와 함께 여유를 즐겨보세요.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>월~금 08:00~21:00  토~일 09:00~21:00  <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        카페아메리카노 4500원 <br>카푸치노 5000원<br> 자바칩 프라푸치노 6300원<br> 펀치 그래피티블렌디드 6300원<br>유자패션피지오 5900원<br>등 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/31317442?c=14220493.7907973,4561466.3329047,19,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/17884702" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4+%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90/data=!4m5!3m4!1s0x3562e5b87f707c1b:0x418788fd5b4b3985!8m2!3d37.8727326!4d127.7450709?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+
+                        <a href="https://www.instagram.com/starbuckskorea/" target="_blank"><img id="potal" src="/media/instagram.png"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

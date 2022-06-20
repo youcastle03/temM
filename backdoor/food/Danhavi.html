@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>단하비</title>
+    <link href="/home.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>단하비</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/danhavi/danhavi.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/danhavi/danhavi1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/danhavi/danhavi2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/danhavi/danhavi3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/danhavi/danhavi4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">6</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로 235 2층<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.4563104307485!2d127.74200405132578!3d37.873010079642235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e53b3106dd0f%3A0x5f901a2480192c21!2z64uo7ZWY67mEIERBTiBIQVZZ!5e0!3m2!1sko!2skr!4v1654828244714!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-254-0235<br><br></div> 
+                    <div><h4>매장소개</h4> 단하비는 여러 파스타, 피자, 필라프등 양식을 판매하는 음식점입니다.<br> 여러종류의 파스타,피자를 먹다보면 어느덧 행복해집니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>매주 일요일 정기휴무 월~토 11:30~21:30 21:00라스트 오더<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        명란파스타 12000원 <br>봉골레파스타 12500원<br> 알리오올리오 11500원 <br>까르보나라 12000원 <br>빠네 13500원<br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/search/%EB%8B%A8%ED%95%98%EB%B9%84/place/1195454569?c=14219957.7874491,4561509.9088329,16,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1592451285" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EB%8B%A8%ED%95%98%EB%B9%84+DAN+HAVY/data=!4m5!3m4!1s0x3562e53b3106dd0f:0x5f901a2480192c21!8m2!3d37.8730101!4d127.7441981?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval">
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                        </div>
+               
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

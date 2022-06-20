@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>역전할머니맥주</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>역전할머니맥주</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/halmac/halmac.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/halmac/halmac1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/halmac/halmac2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/halmac/halmac3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/halmac/halmac4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 백령로 138번길 39-1<br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d371.5848274627078!2d127.74456134066003!3d37.873312644124994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f9e81ff4a924a2e!2z7Jet7KCE7ZWg66i464uI66el7KO8IOqwleybkOuMgOygkA!5e0!3m2!1sko!2skr!4v1655181277777!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-256-5155 <br><br></div> 
+                    <div><h4>매장소개</h4>  역전할머니맥주는 다양한 종류의 안주와 맥주, 하이볼등을 판매합니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 매일 16:10~03:00  <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        먹태 13000원 <br>치즈라볶이 8000원<br> 짜빠구리 8000원<br> 양념감자튀김 6000원<br>버터구이오징어 9000원<br>등 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1689005233?c=14220468.7884397,4561588.4869881,19,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/776169783" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EC%97%AD%EC%A0%84%ED%95%A0%EB%A8%B8%EB%8B%88%EB%A7%A5%EC%A3%BC+%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90/data=!4m12!1m6!3m5!1s0x3562e5c775309561:0x1b09421534ad5415!2z7KO864-Z7JWE66as!8m2!3d37.8734974!4d127.7437361!3m4!1s0x0:0x9f9e81ff4a924a2e!8m2!3d37.8734101!4d127.7446309?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                    <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                    </div>
+                  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

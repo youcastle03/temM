@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>강대맥주창고</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>강대맥주창고</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/kangmac/kangmac.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/kangmac/kangmac1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/kangmac/kangmac2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/kangmac/kangmac3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/kangmac/kangmac4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">3</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 백령로 138번길 35번길 2층<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255.2704360998886!2d127.74435140692833!3d37.873233251019215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x972b0d0aa6ec93f!2z6rCV64yA66el7KO87LC96rOg!5e0!3m2!1sko!2skr!4v1655182272485!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 010-9206-5900 <br><br></div> 
+                    <div><h4>매장소개</h4>  강대맥주창고는는 다양한 종류의 칵테일과 맥주를 판매 합니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 매일 18:30~03:00  <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        칵테일 4000원 <br>생맥주 2500원<br> 다트1게임 1000원<br> 데킬라 1잔 3500원<br>등 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1065643700?c=14220468.7884397,4561588.4869881,19,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/273183328" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EA%B0%95%EB%8C%80%EB%A7%A5%EC%A3%BC%EC%B0%BD%EA%B3%A0/data=!4m5!3m4!1s0x0:0x972b0d0aa6ec93f!8m2!3d37.87337!4d127.7444151?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                    <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                    </div>
+                   
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

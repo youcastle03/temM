@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>봉수닭갈비</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>봉수닭갈비</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/bongsu/bongsu.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/bongsu/bongsu1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/bongsu/bongsu2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/bongsu/bongsu3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/bongsu/bongsu4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">8</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로227번길-1<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.83997490511808!2d127.74344267363541!3d37.87340099935913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5c70a775b2d%3A0x66db95500e0c71ab!2z67SJ7IiY64ut6rCI67mEMuy4tQ!5e0!3m2!1sko!2skr!4v1654834111387!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-252-8136<br><br></div> 
+                    <div><h4>매장소개</h4> 봉수닭갈비는 닭갈비 전문 음식점입니다.<br> 2층에는 매우 넓은 장소도 마련되어있어 행사 장소로도 아주 좋습니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>매일 11:00~24:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        닭갈비 10000원 <br>막국수 5000원<br> 소고기 된장찌개 4000원 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1048914688?c=14220381.4471672,4561621.1481477,17,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/26438295" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EB%B4%89%EC%88%98%EB%8B%AD%EA%B0%88%EB%B9%842%EC%B8%B5/data=!4m5!3m4!1s0x3562e5c70a775b2d:0x66db95500e0c71ab!8m2!3d37.8735113!4d127.7434893?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                             
+                        </div>
+                  
+                  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

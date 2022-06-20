@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>부리또인</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>BURRITO IN</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/부리또인/부리또인.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/부리또인/부리또인1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/부리또인/부리또인2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/부리또인/부리또인3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/부리또인/부리또인4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로 241 1층 <br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021.0897799905695!2d127.7442257535354!3d37.872653482515915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5c78103b561%3A0xb029f53820715ce7!2z67aA66as65iQ7J246rCV7JuQ64yA7KCQ!5e0!3m2!1sko!2skr!4v1655655469594!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-911-6991 <br><br></div> 
+                    <div><h4>매장소개</h4> 부리또인 강원대점은 다양한 부리또와 사이드를 판매합니다. <br> 감자튀김에 다양한 소스와 채소를 곁들인 치즈후라이도 느껴보세요<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 09:00~21:00 재료소진시 마감<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        기본부리또 4500원 <br>감자부리또 5200원<br>에그부리또 5200원<br>해쉬브라운 부리또 5700원 <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1000457849?c=14220484.1616614,4561466.5021313,19,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1099687214" target="_blank"><img id="potal" src="/media/kakao.png"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EB%B6%80%EB%A6%AC%EB%98%90%EC%9D%B8%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90/data=!4m5!3m4!1s0x3562e5c78103b561:0xb029f53820715ce7!8m2!3d37.8728204!4d127.7448512?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                              
+                        </div>
+                
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>스시준</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>스시준</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/sushijoon/sushijoon.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/sushijoon/sushijoon1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/sushijoon/sushijoon2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/sushijoon/sushijoon3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/sushijoon/sushijoon4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로223-1<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d196.83931519515016!2d127.7430881648892!3d37.87364790465102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e52f65987635%3A0x8112d6a1693fd92a!2z7Iqk7Iuc7KSA!5e0!3m2!1sko!2skr!4v1654833175568!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-242-8292<br><br></div> 
+                    <div><h4>매장소개</h4> 스시준은 초밥전문 음식점입니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>매주 일요일 정기휴무 월~토 12:00~21:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        모둠초밥 11000원 <br>생선초밥 14000원<br> 특모둠초밥 14000원 <br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/search/%EC%8A%A4%EC%8B%9C%EC%A4%80/place/37486762?c=14219837.2729684,4561585.2434416,15,0,0,0,dh&placePath=%3Fentry%253Dbmp" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1366821906" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EC%8A%A4%EC%8B%9C%EC%A4%80/data=!4m5!3m4!1s0x3562e52f65987635:0x8112d6a1693fd92a!8m2!3d37.873491!4d127.743094?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>만석식당</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>만석식당</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/mansuk/mansuk.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mansuk/mansuk1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mansuk/mansuk2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mansuk/mansuk3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/mansuk/mansuk4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">7</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 서부대성로227번길 4<br><br></div>
+                    <div><h4>지도</h4><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12595.479232068854!2d127.73096929248472!3d37.88672727582614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5c779e8528d%3A0x99d8c4397abc9d5e!2z66eM7ISd7Iud64u5KOqwleybkOuMgOygkCk!5e0!3m2!1sko!2skr!4v1654792374835!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-241-5492<br><br></div> 
+                    <div><h4>매장소개</h4> 만석식당은 저렴한 가격으로 불고기정식, 분식등을 즐기실 수 있는 음식점입니다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>11:00~21:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        직화불고기정식 7500원 <br>제육불고기정식 (2인) 14000원<br> 옛날즉석떡볶이 (2인) 9000원 <br>라볶이 4500원 <br>쫄면 4500원<br> <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/37127882?c=14219983.9809253,4561555.6284984,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/26923504" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EB%A7%8C%EC%84%9D%EC%8B%9D%EB%8B%B9(%EA%B0%95%EC%9B%90%EB%8C%80%EC%A0%90)/data=!4m9!1m2!2m1!1z66eM7ISd7Iud64u5!3m5!1s0x3562e5c779e8528d:0x99d8c4397abc9d5e!8m2!3d37.87337!4d127.7444151!15sCgzrp4zshJ3si53ri7laDyIN66eM7ISdIOyLneuLuZIBCnJlc3RhdXJhbnQ?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h4><br>
+                  
+                            <h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+            
+                        </div>
+                    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>
