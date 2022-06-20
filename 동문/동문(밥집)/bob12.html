@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>도우도우</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>도우도우</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/도우도우/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/도우도우/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/도우도우/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/도우도우/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/도우도우/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로85번길 9-17 1층<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.7512670138944!2d127.75349169999998!3d37.86611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b05c5fbe1b%3A0xfd2aec1b8155d01c!2z6rCV7JuQ64-EIOy2mOyynOyLnCDsmrDshJ3roZw4NeuyiOq4uCA5LTE3IDHsuLU!5e0!3m2!1sko!2skr!4v1655402968526!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  070-8822-5691 <br><br></div> 
+                    <div><h4>매장소개</h4> 48시간 이상 숙성된 도우를 쓰는 피자를 맛볼 수 있는 음식점이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>월-토: 17:00 ~ 00:00 <br> 매주 일요일 정기휴무 <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        청양페퍼피자 18900원<br>트러플피자 20900원<br>갈릭포테이토피자 19900원<br>비프피자 20900원<br>하프&하프 21900원<br>프렌치프라이 4000원<br>버팔로윙 5900원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1131505926?c=14220991.6783518,4560540.7472080,15,0,0,0,dh&entry=plt&isCorrectAnswer=true" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/783784949" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EA%B0%95%EC%9B%90%EB%8F%84+%EC%B6%98%EC%B2%9C%EC%8B%9C+%EC%9A%B0%EC%84%9D%EB%A1%9C85%EB%B2%88%EA%B8%B8+9-17+1%EC%B8%B5/data=!4m5!3m4!1s0x3562e5b05c5fbe1b:0xfd2aec1b8155d01c!8m2!3d37.86611!4d127.7534917" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

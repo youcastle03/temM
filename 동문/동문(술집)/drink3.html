@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>주유</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>주유</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/주유/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/주유/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/주유/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/주유/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/주유/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로79번길 16-25 1층<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1618229.1895401948!2d126.3065400143333!3d37.61148060043944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b064bfbaad%3A0xd89b6e511e616aa3!2z7KO87Jyg!5e0!3m2!1sko!2skr!4v1655570508261!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 033-911-3839 <br><br></div> 
+                    <div><h4>매장소개</h4><br>시그니처 메뉴인 딱새우,단새우와 다양한 꼬치요리를 맛볼 수 있는 이자카야이다.<br></div>
+                    <div><h4>휴무일/영업시간</h4>월-토: 18:00 ~ 03:00, 일: 18:00 ~ 00:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        딱새우,단새우 반반 32000원 <br>아보카도 딱새우,단새우 반반 36000원 <br>해물 짬뽕탕 17000원 <br>모둠꼬치 17000원 <br>간사이 오뎅탕 17000원 <br>타코와사비 10000원 <br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/183517078?id=183517078&c=14220978.0973740,4560637.5789265,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/439519270" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EC%A3%BC%EC%9C%A0/data=!4m9!1m2!2m1!1z7LaY7LKcIOydtOyekOy5tOyVvCDso7zsnKA!3m5!1s0x3562e5b064bfbaad:0xd89b6e511e616aa3!8m2!3d37.8668568!4d127.7534063!15sChrstpjsspwg7J207J6Q7Lm07JW8IOyjvOycoFocIhrstpjsspwg7J207J6Q7Lm07JW8IOyjvOycoJIBCnJlc3RhdXJhbnQ" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

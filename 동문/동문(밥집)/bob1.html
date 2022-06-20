@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>비와별닭갈비</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>비와별닭갈비</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/비와별닭갈비/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/비와별닭갈비/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/비와별닭갈비/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/비와별닭갈비/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/비와별닭갈비/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 애막골길11번길 38<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12598.821214469566!2d127.74474468551784!3d37.86718531700339!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b07bd42591%3A0x6a883f24406960fc!2z67mE7JmA67OE64ut6rCI67mEIOyVoOunieqzqOygkA!5e0!3m2!1sko!2skr!4v1655543196109!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>033-262-0233 <br><br></div> 
+                    <div><h4>매장소개</h4><br>30년 전통 춘천닭갈비 명가로 전통닭갈비를 맛볼 수 있는 한식집이다.<br></div>
+                    <div><h4>휴무일/영업시간</h4> 월-일 11:00 ~ 22:00 <br> 브레이크타임 15:00 ~ 17:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        원조닭갈비 13000원 <br>매운닭갈비 14000원 <br>퐁듀치즈닭갈비 17000원 <br>낙지닭갈비 19500원<br>감자전 12000원<br>막국수 8000원<br>볶음밥 3000원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/36877580?c=14221194.3132209,4560660.0560847,16,0,0,3,dh" target="_blank"><img id="potal" src="../../media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/8466433" target="_blank"><img id="potal" src="../../media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EB%B9%84%EC%99%80%EB%B3%84%EB%8B%AD%EA%B0%88%EB%B9%84+%EC%95%A0%EB%A7%89%EA%B3%A8%EC%A0%90/data=!3m1!4b1!4m5!3m4!1s0x3562e5b07bd42591:0x6a883f24406960fc!8m2!3d37.8671687!4d127.753478" target="_blank"><img id="potal" src="../../media/google.JPG"></a></div>
+                    <div id="eval"><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form>
+                    </div>    
+                   
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+    
+</body>
+</html>

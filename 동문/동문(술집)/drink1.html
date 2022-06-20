@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>치치</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>치치</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/품은김밥/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/품은김밥/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/품은김밥/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/품은김밥/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/품은김밥/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 애막골길11번길 27 (석사동)<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12598.909062831848!2d127.74375432806198!3d37.86667151553555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b0f32865cd%3A0xacebe513d1d9d70d!2z7LmY7LmY!5e0!3m2!1sko!2skr!4v1655546797042!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-263-2294<br><br></div> 
+                    <div><h4>매장소개</h4> 40여종의 특색 있는 요리들을 고퀄리티, 저렴한 가격으로 즐길 수 있는 주점이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>월-일: 18:00 ~ 06:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        생연어 8000원 <br>바지락술찜 8000원<br>함박스테이크 9500원<br>생관자 8000원<br>이까게소가라아게 5000원<br>오뎅탕 4000원<br>떡볶이 4000원<br>왕새우튀김 4500원<br>양파링 2000원</div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/38459876?c=14220887.5946279,4560610.7304901,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1690573966" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EC%B9%98%EC%B9%98/data=!3m1!4b1!4m5!3m4!1s0x3562e5b0f32865cd:0xacebe513d1d9d70d!8m2!3d37.8666549!4d127.7525091" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

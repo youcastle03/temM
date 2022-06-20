@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>이서냉면</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>이서냉면</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/이서냉면/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/이서냉면/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/이서냉면/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/이서냉면/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/이서냉면/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로 14-1 1층 이서냉면<br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.8323905909483!2d127.74473733465373!3d37.86421204468041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e59a107070ef%3A0xcd2b247a3f6586!2z7J207ISc64OJ66m0!5e0!3m2!1sko!2skr!4v1655727631346!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 033-255-4040<br><br></div> 
+                    <div><h4>매장소개</h4><br>맛있게 매운 냉면을 즐길 수 있는 음식점이다.<br></div>
+                    <div><h4>휴무일/영업시간</h4>월-일 10:00 ~ 20:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        물냉면 8000원<br>비빔냉면 8000원 <br>고기왕만두 5000원 <br>석쇠불고기 7900원 <br><br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1830117159?c=14219384.1803770,4560441.0680257,13,0,0,0,dh&entry=plt" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1958374565" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EC%9D%B4%EC%84%9C%EB%83%89%EB%A9%B4/data=!3m1!4b1!4m5!3m4!1s0x3562e59a107070ef:0xcd2b247a3f6586!8m2!3d37.8618997!4d127.7476073" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                     <div id="eval"><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form>
+                    </div>    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

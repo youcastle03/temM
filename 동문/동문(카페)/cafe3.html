@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>예그리나</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>예그리나</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/예그리나/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/예그리나/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/예그리나/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/예그리나/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/예그리나/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로67번길 3<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.291543869336!2d127.74305948551641!3d37.86443441764363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b113114061%3A0x3249e065b4b3db13!2z7JiI6re466as64KY!5e0!3m2!1sko!2skr!4v1655541531564!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 070-7723-7210 <br><br></div> 
+                    <div><h4>매장소개</h4> 아담하고 귀여운 고양이가 있는 카페이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 월-일: 13:00 ~ 02:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        아메리카노 3500원 <br>바닐라라떼 4500원<br>녹차라떼 4500원<br>유자슬러시 4500원<br>복숭아 아이스트 4000원<br>체리에이드 4000원<br>녹차프라푸치노 5000원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1887131366?c=14220717.1088278,4560375.2456014,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1596616444" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EC%98%88%EA%B7%B8%EB%A6%AC%EB%82%98/data=!3m1!4b1!4m5!3m4!1s0x3562e5b113114061:0x3249e065b4b3db13!8m2!3d37.8644178!4d127.7517928" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

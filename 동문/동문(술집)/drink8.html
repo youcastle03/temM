@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>그놈포차</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>그놈포차</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/그놈포차/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/그놈포차/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/그놈포차/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/그놈포차/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/그놈포차/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로79번길 12-11 1층<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.004654767868!2d127.74444738551728!3d37.866112417253106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e55d9a620c8b%3A0xb0c7e2e40197a64d!2z6re464aI7Y-s7LCoIOy2mOyynOyVoOunieqzqOygkA!5e0!3m2!1sko!2skr!4v1655541111809!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 010-3983-9396 <br><br></div> 
+                    <div><h4>매장소개</h4> 한 메뉴로 2가지 이상의 맛을 느낄 수 있는 안주를 파는 주점이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 월-일: 17:00 ~ 03:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        석쇠무뼈닭발 18000원<br>쭈우삼 23000원<br>놈도리탕 28000원<br>순살3종치킨 25000원<br>무뼈국물닭발 18000원<br>인기 청양마요치킨 18000원<br>닭목살소금구이 16000원<br>남포동떡볶이 6000원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1723182558?c=14220891.3015670,4560570.4015616,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/261807432" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EA%B7%B8%EB%86%88%ED%8F%AC%EC%B0%A8+%EC%B6%98%EC%B2%9C%EC%95%A0%EB%A7%89%EA%B3%A8%EC%A0%90/data=!3m1!4b1!4m5!3m4!1s0x3562e55d9a620c8b:0xb0c7e2e40197a64d!8m2!3d37.8660958!4d127.7531807" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

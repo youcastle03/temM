@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>니하오양꼬치</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>니하오양꼬치</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/니하오양꼬치/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/니하오양꼬치/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/니하오양꼬치/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/니하오양꼬치/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/니하오양꼬치/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 애막골길7번길 27<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12598.857564347443!2d127.74347468551771!3d37.86697271705287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b0925767bd%3A0xe0f5d191aa90ba4e!2z64uI7ZWY7Jik7JaR6rys7LmY!5e0!3m2!1sko!2skr!4v1655403470252!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 033-262-5866 <br><br></div> 
+                    <div><h4>매장소개</h4> 양꼬치와 다양한 중식을 즐길 수 있는 분식집이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>월-일: 17:00 ~ 01:00<br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        양꼬치 11000원 <br>생양삼겹 13000원<br>양고급갈비 20000원<br>꿔보러우 15000원<br>경장육슬 16000원<br>바지락볶음 15000원<br>해물짬뽕온면 8000원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1159785592?c=14220882.2735563,4560687.7930213,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/2055164376" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EB%8B%88%ED%95%98%EC%98%A4%EC%96%91%EA%BC%AC%EC%B9%98/data=!3m1!4b1!4m5!3m4!1s0x3562e5b0925767bd:0xe0f5d191aa90ba4e!8m2!3d37.8669561!4d127.752208" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

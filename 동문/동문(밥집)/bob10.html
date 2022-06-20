@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>빈체로파스타</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>빈체로파스타</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/빈체로파스타/1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/빈체로파스타/2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/빈체로파스타/3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/빈체로파스타/4.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/빈체로파스타/5.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 애막골길20번길 19<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.534372530177!2d127.74106492909318!3d37.863014075893275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b472fb7657%3A0x7ab8ddf66132133f!2z67mI7LK066Gc!5e0!3m2!1sko!2skr!4v1655400357806!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4>  033-262-0075 <br><br></div> 
+                    <div><h4>매장소개</h4> 파스타,스파게티 그리고 시그니처 피자인 시금치피자를 맛볼 수 있는 음식점이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4>월-토: 11:30~21:30 <br> 브레이크타임 15:00~16:30 <br> 매주 일요일 정기휴무 <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        빈체로 해산물 스파게티 13500원<br>고르곤졸라 피자 13500원<br>봉골레 파스타 11500원<br>알리오 올리오 파스타 10500원<br>시금치피자 13500원<br>고구마피자 12500원<br>루꼴라피자 12500원<br>빠네빵 3000원</div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/34015037?c=14218698.7862722,4561517.2420168,13,0,0,0,dh&entry=plt&isCorrectAnswer=true" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/22425146" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EB%B9%88%EC%B2%B4%EB%A1%9C/data=!3m1!4b1!4m5!3m4!1s0x3562e5b472fb7657:0x7ab8ddf66132133f!8m2!3d37.8630144!4d127.7498197" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

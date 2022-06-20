@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>곱창이야기</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>곱창이야기</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/곱창이야기/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/곱창이야기/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/곱창이야기/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/곱창이야기/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/곱창이야기/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 우석로79번길 12-3<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.045739999665!2d127.74411952806166!3d37.8658721157216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b0f850aa0b%3A0xc1d7fd8652154b5c!2z6rOx7LC97J207JW86riw!5e0!3m2!1sko!2skr!4v1655569153580!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 010-8672-5576 <br><br></div> 
+                    <div><h4>매장소개</h4><br>한우곱창, 한우대창, 소막창과 마지막으로 볶음밥을 맛볼 수 있는 음식점이다.<br></div>
+                    <div><h4>휴무일/영업시간</h4> 월,수-일: 17:30 ~ 01:00 라스트오더 23:30 <br> 매주 화요일 정기휴무 <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        한우곱창 21000원 <br>한우대창 23000원 <br>소막창 22000원<br>곱창모둠 22000원<br>육회 12000원<br>염통 12000원<br>볶음밥 3000원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/31183371?c=14219775.6910261,4560585.6447501,19,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/18392924" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EA%B3%B1%EC%B0%BD%EC%9D%B4%EC%95%BC%EA%B8%B0/data=!3m1!4b1!4m5!3m4!1s0x3562e5b0f850aa0b:0xc1d7fd8652154b5c!8m2!3d37.8658555!4d127.7528743" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

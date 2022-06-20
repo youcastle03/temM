@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>디스틸드</title>
+    <link href="/home.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;700&display=swap');
+        </style>
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>Distilled</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="img1.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img2.png"></div>
+                        <div class="subpic"><img id="picImg" src="img3.png"></div>
+                        <div class="subpic"><img id="picImg" src="img4.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img5.jpeg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 공지로252번길 12 1층 <br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.7949897361773!2d127.73473535132557!3d37.86508707964376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e547f4bfd30d%3A0xe121d2c4b5f3c94!2z65SU7Iqk7Yu465Oc!5e0!3m2!1sko!2skr!4v1654678554090!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 0507-1426-8178 <br><br></div> 
+                    <div><h4>매장 소개</h4> 시그니처 음료와 디저트, 포토존이 가득한 춘천 카페 디스틸드
+                        <br><br> #춘천데이트카페 #춘천디저트맛집 #춘천분위기카페 #춘천카페 #춘천커피맛집 #감성카페 #데이트코스 #디저트카페 #제로페이
+                    </div>
+                    <div><h4>휴무일/영업시간</h4>월,화,수,목,토,일 10:00 ~ 20:00<br> 금요일 휴무 <br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4> 아메리카노 3800원 <br> 토피넛라떼 4800원 <br> 
+                    아이리쉬 아인슈페너 5500원 <br> 제주말차 5500원 <br> 진저레몬 밀크티 5500원 <br> 딸기 크림라떼 6500원 </div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="http://naver.me/59jiPBeG" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1329241168" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://goo.gl/maps/WxpDRJb7djXSktT76" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+                        <a href="https://www.instagram.com/distilled_coffee/" target="_blank"><img id="potal" src="/media/instagram.png"></a>
+                    </div>
+                    <div id="eval"><h4><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form><br> </div>
+                    
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

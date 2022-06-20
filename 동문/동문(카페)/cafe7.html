@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>맑음 때때로 비</title>
+    <link href="/home.css" rel="stylesheet">
+
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>맑음 때때로 비</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/맑음/1.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/맑음/2.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/맑음/3.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/맑음/4.jpg"></div>
+                        <div class="subpic"><img id="picImg" src="/media/맑음/5.jpg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 애막골길20번길 18-1 1층<br><br></div>
+                    <div><h4>지도</h4><iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12599.488513139097!2d127.7410378855159!3d37.86328231791177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5b40d0c57d7%3A0xe0931b4cc85cfde2!2z66eR7J2M65WM65WM66Gc67mE!5e0!3m2!1sko!2skr!4v1655541931688!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 010-2914-7216 <br><br></div> 
+                    <div><h4>매장소개</h4> 다양한 수제 케이크와 마시멜로쿠키를 맛볼 수 있는 카페이다.<br><br></div>
+                    <div><h4>휴무일/영업시간</h4> 일-목:10:00 ~ 20:00 <br> 매주 금요일,토요일 정기휴무 <br><br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4><br>
+                        아메리카노 4000원 <br>초코라떼 5000원<br>토종꿀 아메리카노 7500원<br>자몽에이드 5000원<br>복숭아아이스티 5000원<br>마시멜로쿠키 2000원<br>수제케이크 7500원<br></div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1794079546?c=14220578.9502078,4560132.8850502,15,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/1033504972" target="_blank"><img id="potal" src="/media/daum.JPG"></a>
+                        <a href="https://www.google.com/maps/place/%EB%A7%91%EC%9D%8C%EB%95%8C%EB%95%8C%EB%A1%9C%EB%B9%84/data=!3m1!4b1!4m5!3m4!1s0x3562e5b40d0c57d7:0xe0931b4cc85cfde2!8m2!3d37.8632657!4d127.74977123d37.8730535!4d127.7454747?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a></div>
+                        <div id="eval"><h2>후기:</h2>
+                            <ul id="comments"></ul>
+                            <form action="/js/comment.js" id="Form">
+                                <input type="text" name="comment" placeholder="comment" />
+                                <button>후기작성</button>
+                              </form>
+                        </div>  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>
