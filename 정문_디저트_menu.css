@@ -1,0 +1,41 @@
+table{ border-spacing: 10px;
+    margin-left: auto; margin-right: auto;}
+
+tbody{
+    width: 800px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#imgpart{
+    text-align: center;
+}
+
+.foodimg{
+    width: 200px;
+    height: 200px;
+    /*background-color: rgb(255, 243, 227);*/
+}
+
+img{ width: 0px; height: 130px; }
+
+img:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.text{
+    
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    font-size: small; 
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+a:visited{
+    color:black;
+}
