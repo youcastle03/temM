@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>스윗멜로우</title>
+    <link href="/home.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>SWEET MELLOW</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="img1.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img2.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img3.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img4.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img5.jpeg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 공지로242번길 23 <br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.787013951922!2d127.73420618006483!3d37.86527367984221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5cd301d5cc3%3A0x191a4cdb27189c0e!2z7Iqk7JyX66mc66Gc7Jqw!5e0!3m2!1sko!2skr!4v1655114770425!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 010-5680-5909 <br><br></div> 
+                    <div><h4>매장 소개</h4> 강대 정문 골목길에 위치하고 있는 아담하고 예쁜 감성의 디저트 카페
+                        <br> 그릭 요거트, 쿠키 등 판매 중이며 모든 디저트는 좋은 재료로 매장에서 직접 정성껏 만들고 있습니다
+                        <br>* 마카롱은 2021년 5월 8일 이후로 판매 종료
+                        <br><br></div>
+                        <div class="hashtag">#디저트카페 </div>
+                    <div><h4>휴무일/영업시간</h4>화 - 토 11:30 ~ 19:00 <br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4> 아메리칸쿠키 3000원 <br> 그릭요거트볼 가격변동
+                        <br> 아메리카노 3500원 <br> 카페라떼 4500원</div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="http://naver.me/FXLdtgjQ" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/129579718" target="_blank"><img id="potal" src="/media/kakao.png"></a>
+                        <a href="https://goo.gl/maps/nAwmegkDrxqt28B6A" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+                        <a href="www.instagram.com/sweet_mellow903" target="_blank"><img id="potal" src="/media/instagram.png"></a>
+                    </div>
+                    <div id="eval"><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form><br> </div>
+                  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>
