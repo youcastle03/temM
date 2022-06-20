@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>효자동디저트</title>
+    <link href="/home.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>효자동디저트</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="img1.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img2.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img3.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img4.jpeg"></div>
+                        <div class="subpic"><img id="picImg" src="img5.jpeg"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4>강원 춘천시 공지로 276 1층<br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.7472927233193!2d127.73233318006497!3d37.866202979842114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e5cd58ef09e9%3A0xf76cd7b4390ce03!2z6rCV7JuQ64-EIOy2mOyynOyLnCDqs7Xsp4DroZwgMjc2!5e0!3m2!1sko!2skr!4v1655115906960!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 0507-1355-0184 <br><br></div> 
+                    <div><h4>매장 소개</h4> 준비되는 디저트는 매일 조금씩 변동되며, 당일 메뉴는 효자동디저트
+                                            인스타그램(@Hyoja.dong_Dessert)을 통해서 확인 가능 
+                                            <br> 당일 준비 된 디저트 모두 소진 시 조기마감 
+                        <br><br></div>
+                        <div class="hashtag">#디저트카페 </div>
+                    <div><h4>휴무일/영업시간</h4>월-금 11:00 ~ 22:00 <br>매주 토,일 정기휴무 <br>
+                                                <br>모든 디저트 소진 시 조기 마감 </div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4> 아이스 아메리카노 3500원 <br> 마카롱 2500원 <br> 르뱅쿠키 3000원 <br> 스콘 2800원 <br>
+                                에그타르트 2300원 <br> 까눌레 2500원 <br> 아메리칸 쿠키 2000원 <br> 디저트바 3500원
+                    <br> </div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="http://naver.me/xFpb5z0e" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/995331567" target="_blank"><img id="potal" src="/media/kakao.png"></a>
+                        <a href="https://goo.gl/maps/PLps8EHGZCZfMSj49" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+                        <a href="http://instagram.com/hyoja.dong_dessert/" target="_blank"><img id="potal" src="/media/instagram.png"></a>
+                    </div>
+                    <div id="eval"><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form><br> </div>
+                  
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>

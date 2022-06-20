@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>카페드 220v</title>
+    <link href="/home.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+        </style>
+</head>
+<script src="/js/imagechange.js"></script>
+<body>
+    
+        <header id="name">
+            <h1>CAFE DE 220V</h1>
+        </header>
+            <div id="container">
+                <div id="foodimage">
+                    <div class="pic">
+                        <div class="subpic"><img id="picImg" src="/media/카페드220v/카페드220v.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/카페드220v/카페드220v1.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/카페드220v/카페드220v2.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/카페드220v/카페드220v3.JPG"></div>
+                        <div class="subpic"><img id="picImg" src="/media/카페드220v/카페드220v4.JPG"></div>
+                    </div>
+                </div>
+                <div id="left"></div>
+                <div id="right"><img id="heart" src="/media/heart/heart.png" onclick="heartchange()"><div id="good">좋아요</div>
+                    <div id="likenumber">5</div>
+                    <img id="star" src="/media/star/star.png" onclick="starchange()"><div id="good">즐겨찾기</div>
+                    <a href="#comments"><img id="pen" src="/media/pen/pen.png"><div id="good"></a>한줄평작성</div>                    
+                </div>
+                <div id="information">
+                    <div> <h4>위치</h4> 강원 춘천시 동내면 금촌로 107-27 <br><br></div>
+                    <div><h4>지도</h4><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.6195693143405!2d127.78450193280867!3d37.85641713554701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3562e532f624f37d%3A0x4430aa53c31634c9!2z7Lm07Y6Y65OcIDIyMFbrs7ztirgg7LaY7LKc!5e0!3m2!1sko!2skr!4v1655649714524!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br></div>  
+                    <div><h4>전화번호</h4> 033-263-0220 <br><br></div> 
+                    <div><h4>매장 소개</h4> 춘천 카페 CAFE DE 200V 입니다.
+                        <br> 다양한 브런치와 음료를 즐길 수 있으며
+                        <br> 2층 실외테라스에서 넓은 잔디밭과 함께 여유를 느낄수 있는카페입니다.
+                        <br><br></div>
+                    <div><h4>휴무일/영업시간</h4>매일 10:00~22:00 <br></div>
+                    <div><h4>추천(대표)메뉴 & 가격</h4> 누룽슈페너 6800원 <br> 아메리카노 5800원
+                        <br> 아보카도 닭가슴살 샐러드 13000원 <br> 토마토 브루스케타 13000원</div> 
+                    <div> <h4>포털검색</h4> 
+                        <a href="https://map.naver.com/v5/entry/place/1350674725?c=14224859.8080179,4559270.3287012,18,0,0,0,dh" target="_blank"><img id="potal" src="/media/naver.JPG"></a>
+                        <a href="https://place.map.kakao.com/184325082" target="_blank"><img id="potal" src="/media/kakao.png"></a>
+                        <a href="https://www.google.co.kr/maps/place/%EC%B9%B4%ED%8E%98%EB%93%9C+220V%EB%B3%BC%ED%8A%B8+%EC%B6%98%EC%B2%9C/data=!4m5!3m4!1s0x3562e532f624f37d:0x4430aa53c31634c9!8m2!3d37.8565616!4d127.7846136?hl=ko" target="_blank"><img id="potal" src="/media/google.JPG"></a>
+                        <a href="https://www.instagram.com/cafe_de_220volt/" target="_blank"><img id="potal" src="/media/instagram.png"></a>
+                    </div>
+                    <div id="eval"><h2>후기:</h2>
+                        <ul id="comments"></ul>
+                        <form action="/js/comment.js" id="Form">
+                            <input type="text" name="comment" placeholder="comment" />
+                            <button>후기작성</button>
+                          </form><br> </div>
+                   
+                    
+                </div>
+            </div>
+            <script src="/js/comment.js"></script>
+</body>
+</html>
