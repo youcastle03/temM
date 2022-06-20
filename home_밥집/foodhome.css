@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'HancomUljuBangudae';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205-2@1.0/HancomUljuBangudae.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:white;
+    
+}
+@font-face {
+    font-family: 'EarlyFontDiary';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_220508@1.0/EarlyFontDiary.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header{
+    text-align:center;
+    font-family: 'HancomUljuBangudae', sans-serif;
+    
+}
+.subpic{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.pic{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 180px 180px 180px 180px 180px; 
+    grid-gap: 10px;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+
+
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+#foodimage{
+    clear: both;
+    width:100%;
+    height:20%;
+}
+#left{
+    float:left;
+    width:20%;
+    height:100%;
+}
+#right{
+    float:right;
+    width:20%;
+    height:100%;
+}
+#information{
+    width:60%;
+    height:75%;
+    margin-left:20%;
+}
+#footer{
+    width: 100%;
+    height:5%;
+    background-color:lightsteelblue;
+}
+#map{
+    width:400px;
+    height:300px;
+}
+#heart{
+    width:100px;
+    height:100px;
+}
+#star{
+    width:100px;
+    height:100px;
+}
+#good{
+    margin-left:30px;
+    font-family:'EarlyFontDiary',sans-serif;
+}
+#potal{
+    width: 150px;
+    height: 150px;
+
+}
+#likenumber{
+    margin-left:40px;
+    font-family:'EarlyFontDiary',sans-serif;
+}
+#pen{
+    width:100px;
+    height: 100px;
+}
